@@ -1,7 +1,9 @@
+import '../styles/bootstrap.css'
+import '../styles/webfonts.css'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function LandShop({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 
-export default MyApp
+export default LandShop

@@ -1,0 +1,26 @@
+
+._section_title {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+._top_title {
+    color: #F1554C;
+    font-weight: 700;
+}
+
+._title {
+    font-size: 48px;
+}
+
+._sub_title {
+    margin-bottom: 0;
+    margin-top: 24px;
+}
+
+
+@media only screen and (max-width: 768px) {   
+    ._title {
+        font-size: 28px;
+    }
+}

@@ -1,0 +1,125 @@
+._main_area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    border-bottom: 1px solid #ededed;
+    background-color: #ffffff;
+}
+
+._row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--navbar-height);
+}
+
+._navright {
+    display: flex;
+    align-items: center;
+}
+
+._logo {
+    display: block;
+}
+
+._menu {
+    margin: 0 30px;
+}
+
+._menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+._menu ul li {
+    margin: 0 1.25rem;
+}
+
+._menu ul li a {
+    display: inline-block;
+    line-height: var(--navbar-height);
+    text-decoration: none;
+    color: #6E6E78;
+}
+
+._menu ul li:hover a {
+    color: #10131F;
+}
+
+._action {
+    display: flex;
+}
+
+._action ._icon {
+    margin-right: 8px;
+}
+
+._toggle {
+    font-size: 1.8rem;
+    line-height: 0.6rem;
+    display: none;
+    padding: 1rem;
+    box-shadow: none;
+}
+
+._toggle:hover {
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 992px) {
+    ._toggle {
+        display: block;
+    }
+
+    ._navright ._toggle {
+        padding: 0;
+    }
+    
+    ._navright {
+        position: fixed;   
+        right: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        background: #ffffff;
+        z-index: 10;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-direction: column;
+        border-left: 1px solid #ededed;
+        transform: translateX(100%);
+        transition: 0.3s;
+        padding: 30px;
+    }
+
+    ._menu {
+        margin: 0;
+    }
+    
+    ._menu ul {
+        flex-direction: column;
+    }
+    
+    ._menu ul li {
+        margin: 0;
+    }
+
+    ._menu ul li a {
+        line-height: 3rem;
+        font-size: 1.6rem;
+    }
+
+    .mobile_nav_open ._navright {
+        transform: translateX(0%);
+    }
+    
+    ._navright ._action {
+        justify-content: center;
+        width: 100%;
+    }
+  }
