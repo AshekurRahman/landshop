@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* ======= RooT-Variable ======= */
 :root {
-  --navbar-height: 100px;
+  --navbar-height: 120px;
 
   --primary-color: #FF6B31;
   --heading-color: #131313;
@@ -31,14 +33,19 @@ body {
 }
 
 body {
-  font-family: 'Gilroy';
-  font-weight: 500;
-  font-size: 1.125rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   color: #696969;
 }
 
-h1,h2,h3,h4,h5,h6 {
-  font-family: 'Gilroy';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: #131313;
 }
@@ -294,6 +301,7 @@ textarea {
 
 button {
   overflow: visible;
+  transition: 0.3s;
 }
 
 /**
@@ -488,7 +496,8 @@ th {
 }
 
 /* ======= Template-CSS ======= */
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: #ffffff;
   background: var(--primary-color);
 }

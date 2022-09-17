@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div className={styles._wrapper}>
       <Head>
-        <title>Folioedge - Demo Panel</title>
+        <title>Landshop - Product Landing WordPress Theme</title>
         <meta name="description" content="Folioedge is a personal portfolio website wordpress theme" />
         <link rel="icon" href="/favicon.ico" />
       </Head>

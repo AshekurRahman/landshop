@@ -2,7 +2,7 @@ import {React, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from './Navbar.module.css'
-import Logo from './images/logo-light.svg'
+import Logo from './images/logo.svg'
 import { MdMenuOpen,MdClose } from 'react-icons/md';
 import Icon from '../../../common/Icon/Icon'
 
@@ -20,14 +20,18 @@ const Navbar = () => {
             <button onClick={() => setIsMobileMenu(!isMobileMenu)} className={`${styles._toggle} btn btn-none`} ><MdClose /></button>
             <div className={styles._menu} >
               <ul>
-                <li><Link href='#demosection'>Demos</Link></li>
-                <li><Link href='#innerpages'>Inner Pages</Link></li>
-                <li><Link href='http://polothemes.com/docs/folioedge'>Documentation</Link></li>
-                <li><Link href='mailto:ashekurrahman1@gmail.com'>Support</Link></li>
+                <li><Link href='#Home'>Home</Link></li>
+                <li><Link href='#Home'>Overview</Link></li>
+                <li><Link href='#Home'>Pages</Link></li>
+                <li><Link href='#Home'>Product</Link></li>
+                <li><Link href='#Home'>Reviews</Link></li>
+                <li><Link href='#Home'>FAQ</Link></li>
               </ul>
             </div>
-            <div className={styles._action} >
-              <Link href='/' ><span className={`btn btn-primary`}><Icon name={`ic-envato`} className={styles._icon} />Purchase Now</span></Link>
+            <div className={styles._actions} >
+              <button type="button" className={styles._action} ><Icon name={`ic-chat`} className={styles._icon} /></button>
+              <button type="button" className={styles._action} ><Icon name={`ic-user`} className={styles._icon} /></button>
+              <button type="button" className={styles._action} ><Icon name={`ic-shop`} className={styles._icon} /></button>
             </div>
           </div>
           <button onClick={() => setIsMobileMenu(!isMobileMenu)} className={`${styles._toggle} btn btn-none`} ><MdMenuOpen /></button>

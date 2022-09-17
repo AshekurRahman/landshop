@@ -4,7 +4,6 @@
     top: 0;
     width: 100%;
     z-index: 9;
-    border-bottom: 1px solid #ededed;
     background-color: #ffffff;
 }
 
@@ -22,6 +21,7 @@
 
 ._logo {
     display: block;
+    line-height: 0;
 }
 
 ._menu {
@@ -43,19 +43,42 @@
     display: inline-block;
     line-height: var(--navbar-height);
     text-decoration: none;
-    color: #6E6E78;
+    color: var(--heading-color);
+    font-weight: 500;
 }
 
 ._menu ul li:hover a {
-    color: #10131F;
+    color: var(--primary-color);
+}
+
+._actions {
+    display: flex;
+    margin: -8px;
 }
 
 ._action {
-    display: flex;
+    border: none;
+    border-radius: 100px;
+    padding: 0;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    margin: 8px;
+    color: #131313;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+._action:hover {
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.07);
+    background-color: var(--primary-color);
+    color: #ffffff;
+    line-height: 0;
+    line-height: 42px;
 }
 
 ._action ._icon {
-    margin-right: 8px;
+    margin: auto;
 }
 
 ._toggle {
@@ -110,15 +133,14 @@
     }
 
     ._menu ul li a {
-        line-height: 3rem;
-        font-size: 1.6rem;
+        line-height: 2rem;
     }
 
     .mobile_nav_open ._navright {
         transform: translateX(0%);
     }
     
-    ._navright ._action {
+    ._navright ._actions {
         justify-content: center;
         width: 100%;
     }
